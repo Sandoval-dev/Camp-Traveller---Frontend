@@ -68,3 +68,28 @@
     @apply bg-background text-foreground;
   }
 }
+
+.hide-scrollbar::-webkit-scrollbar{
+  display: none;
+}
+
+.hide-scrollbar{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: #000000 !important;
+  padding: 8px !important;
+}
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+  display: inline-block;
+  border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+  background: #000000 !important;
+  padding: 8px !important;
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.7);
+}
